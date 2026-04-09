@@ -9,21 +9,30 @@
   <body>
     <header>
       <div class="container">
-        <h1>Gabriel Martorelli</h1>
-        <p>Estudante de Sistemas de Informação • Desenvolvedor em formação</p>
+        <div class="header-content">
+          <h1 class="animate-fade-in">Gabriel Martorelli</h1>
+          <p class="subtitle animate-fade-in" style="animation-delay: 0.2s">
+            Estudante de Sistemas de Informação • Desenvolvedor em formação
+          </p>
+        </div>
       </div>
-      <button></button>
-      <span></span>
+      <div class="header-glow"></div>
     </header>
 
-    <section class="sobre">
+    <section class="sobre scroll-reveal">
       <div class="container">
-        <h2>Sobre mim</h2>
-        <p>
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="about-text">
           Estou iniciando minha jornada na programação, estudando lógica, C#,
           ASP.NET, HTML e CSS. Busco minha primeira oportunidade como estagiário
           para aprender na prática e crescer na área de desenvolvimento.
         </p>
+        <div class="skills-mini">
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">ASP.NET</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
       </div>
     </section>
 
@@ -32,7 +41,8 @@
         <h2>Projetos em destaque</h2>
 
         <div class="grid">
-          <div class="card">
+          <div class="card card-hover" data-index="0">
+            <div class="card-icon">⚙️</div>
             <h3>Lógica de Programação</h3>
             <p>
               Exercícios e desafios em C# para treinar raciocínio e fundamentos.
@@ -40,11 +50,13 @@
             <a
               href="https://github.com/martoxm/logica-programacao"
               target="_blank"
-              >Ver repositório</a
+              class="btn-link"
+              >Ver repositório →</a
             >
           </div>
 
-          <div class="card">
+          <div class="card card-hover" data-index="1">
+            <div class="card-icon">🧮</div>
             <h3>Calculadora</h3>
             <p>
               Calculadora online feita com HTML, CSS e JavaScript — simples,
@@ -53,11 +65,13 @@
             <a
               href="https://martoxm.github.io/calculadora-online/"
               target="_blank"
-              >Ver calculadora</a
+              class="btn-link"
+              >Ver calculadora →</a
             >
           </div>
 
-          <div class="card">
+          <div class="card card-hover" data-index="2">
+            <div class="card-icon">🌐</div>
             <h3>ASP.NET Inicial</h3>
             <p>
               Mini projetos MVC com controllers, views, models e formulários.
@@ -65,38 +79,63 @@
             <a
               href="https://github.com/martoxm/projeto-aspnet-inicial"
               target="_blank"
-              >Ver repositório</a
+              class="btn-link"
+              >Ver repositório →</a
             >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contato">
+    <section class="contato scroll-reveal">
       <div class="container">
-        <h2>Contato</h2>
-        <p>
+        <h2 class="section-title">Contato</h2>
+        <p class="contact-intro">
           Estou aberto a oportunidades de estágio e conexões na área de
           tecnologia.
         </p>
-        <p><strong>Email:</strong> gabriel.martorelli@hotmail.com</p>
-        <p>
-          <strong>LinkedIn:</strong>
+        <div class="contact-links">
+          <a
+            href="mailto:gabriel.martorelli@hotmail.com"
+            class="contact-card hover-lift"
+          >
+            <span class="icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p>gabriel.martorelli@hotmail.com</p>
+            </div>
+          </a>
           <a
             href="https://www.linkedin.com/in/gabrielmartorelli"
             target="_blank"
-            >Meu LinkedIn</a
+            class="contact-card hover-lift"
           >
-        </p>
-        <p>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/martoxm" target="_blank">Meu GitHub</a>
-        </p>
+            <span class="icon">💼</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <p>gabrielmartorelli</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/martoxm"
+            target="_blank"
+            class="contact-card hover-lift"
+          >
+            <span class="icon">🔗</span>
+            <div>
+              <strong>GitHub</strong>
+              <p>martoxm</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
     <footer>
       <p>© 2026 - Portfólio de Gabriel Martorelli</p>
+      <div class="footer-accent"></div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
