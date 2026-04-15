@@ -37,6 +37,15 @@ body {
   position: relative;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--bg-color) var(--bg-url) no-repeat center top/cover;
+  transform: translateZ(0);
+}
 /* Animações globais */
 @keyframes fadeInUp {
   from {
