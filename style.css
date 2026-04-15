@@ -43,7 +43,8 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: var(--bg-dark);
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1f3a 100%);
+  background-color: var(--bg-dark);
   transform: translateZ(0);
 }
 /* Animações globais */
