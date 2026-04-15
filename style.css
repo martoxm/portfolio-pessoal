@@ -43,7 +43,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: var(--bg-color) var(--bg-url) no-repeat center top/cover;
+  background: var(--bg-dark);
   transform: translateZ(0);
 }
 /* Animações globais */
